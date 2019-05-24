@@ -16,8 +16,6 @@ class NSGA2
     //メンバ関数
     //初期化
     void Initialization();
-    //vector内にある要素が存在するかを検索する関数
-    int vector_finder(std::vector<double> vec, int number);
 
     public:
     //メンバ変数crowding_distance_values
@@ -35,6 +33,8 @@ class NSGA2
     double mutation(double solution);
     //リストのインデックスを見つけるための関数
     int index_of(int a , std::vector<double> list);
+    //vector内にある要素が存在するかを検索する関数
+    int vector_finder(std::vector<double> vec, int number);
     //ソート用関数
     std::vector<double> sort_by_values(std::vector<double> list, std::vector<double> values);
     //混雑度距離の計算用関数
